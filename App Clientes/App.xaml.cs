@@ -1,4 +1,6 @@
-﻿namespace App_Clientes
+﻿using App_Clientes.Views;
+
+namespace App_Clientes
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new ClienteMainPage();
         }
     }
 }
