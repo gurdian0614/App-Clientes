@@ -64,6 +64,18 @@ namespace App_Clientes.ViewModels
                     case "Actualizar":
                         await App.Current.MainPage.Navigation.PushAsync(new ClienteFormPage(cliente));
                         break;
+                    case "Eliminar":
+                        bool respuesta = await App.Current!.MainPage!.DisplayAlert("Eliminar Cliente", "¿Desea eliminar el cliente?", "Si", "No");
+
+                        if (respuesta)
+                        {
+                            int del = _clienteService.Delete(cliente);
+                            if (del > 0)
+                            {
+                                ClienteCollection.Remove(cliente);
+                            }
+                        }
+                        break;
                 }
             } catch (Exception ex)
             {
