@@ -31,7 +31,7 @@ namespace App_Clientes.Services
         /// <summary>
         /// Agrega nuevo registro
         /// </summary>
-        /// <param name="cliente">Objeto a guatrdar en la db</param>
+        /// <param name="cliente">Objeto a guardar en la db</param>
         /// <returns>Numero mayor que cero si se guardó correctamente</returns>
         public int Insert(Cliente cliente)
         {

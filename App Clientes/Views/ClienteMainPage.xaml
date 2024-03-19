@@ -7,10 +7,10 @@
              xmlns:models="clr-namespace:App_Clientes.Models"
              Title="Listado de Clientes">
     <ScrollView>
-        <VerticalStackLayout Padding="10,0,10,0">
+        <VerticalStackLayout Padding="10,20,10,5">
             <Button Text="Agregar Cliente" HorizontalOptions="Start" Command="{Binding GoToClienteFormPageCommand}" />
 
-            <Grid Margin="0,5,0,5" RowDefinitions="Auto" ColumnDefinitions="33*,33*,33*,33*,33*">
+            <Grid Margin="10,20,10,5" RowDefinitions="Auto" ColumnDefinitions="33*,33*,33*,33*,33*" >
                 <Label Text="Nombre" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="0" />
                 <Label Text="Dirección" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="1" />
                 <Label Text="Teléfono" FontAttributes="Bold" HorizontalTextAlignment="Start" Grid.Row="0" Grid.Column="2" />

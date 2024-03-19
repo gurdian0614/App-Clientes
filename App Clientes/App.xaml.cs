@@ -8,7 +8,7 @@ namespace App_Clientes
         {
             InitializeComponent();
 
-            MainPage = new ClienteMainPage();
+            MainPage = new NavigationPage(new ClienteMainPage());
         }
     }
 }
